@@ -1,0 +1,85 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  background-color: var(--nav-background-color);
+  height: 56px;
+
+  border-bottom-color: var(--border-color);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
+  padding: 0px 8px;
+}
+
+.app-header-component {
+  font-family: Arial;
+}
+
+.header-left-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10px;
+}
+
+.create-button {
+  border-style: none;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0px;
+
+  margin-left: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 40px;
+
+  background-color: #0c8ce9;
+}
+
+.create-button:hover {
+  background-color: #0d79d6;
+}
+
+.create-button:active {
+  background-color: #0c6dc2;
+}
+
+.plus-icon {
+  vertical-align: middle;
+  width: 12px;
+}
+
+.create-button-text {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 0.5px;
+  margin-left: 4px;
+  margin-right: 14px;
+  text-align: center;
+  vertical-align: middle;
+
+  color: white;
+}
+
+.dropdown-icon {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,14 @@
+.sort-order-section {
+  display: flex;
+
+  width: 100%;
+  max-height: 5%;
+
+  margin-top: 70px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.image-gallery {
+  margin-left: 55px;
+}

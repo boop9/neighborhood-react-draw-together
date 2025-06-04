@@ -1,0 +1,47 @@
+.filterable-content-gallery-container {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 45px;
+  row-gap: 60px;
+  margin-left: 45px;
+}
+
+.gallery-heading {
+  width: 100%;
+  margin-left: 45px;
+  margin-bottom: 20px;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+
+  width: 313px;
+  height: 251px;
+  background-color: gray;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.thumbnail {
+  flex: 3;
+  align-content: center;
+  align-self: center;
+}
+
+.gallery-item-description {
+  display: flex;
+  flex-direction: row;
+  row-gap: 9px;
+  flex: 1;
+
+  padding-left: 9px;
+}
+
+.gallery-item-name {
+  padding-bottom: 9px;
+}
