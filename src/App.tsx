@@ -4,15 +4,12 @@
 
 import CreateButton from "./components/CreateButton";
 import SortButtons from "./components/SortButtons";
-import ListGroup from "./components/ListGroup";
 import Skeleton from "react-loading-skeleton";
 import Sidebar from "./components/Sidebar";
 import Gallery from "./components/Gallery";
 
 const App = () => {
-  const items = ["San Francisco", "New York", "Tokyo", "Birmingham", "London"];
-
-  const handleSortGroup = (_sort: number, group: number) => {};
+  const handleSortGroup = (_sort: number, _group: number) => {};
   return (
     <>
       <header className="app-header">
