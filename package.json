@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@floating-ui/react": "^0.27.11",
+    "@pixi/react": "^8.0.0-beta.25",
     "bootstrap": "^5.2.3",
     "lucide-react": "^0.511.0",
+    "pixi.js": "^8.10.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-loading-skeleton": "^3.5.0",

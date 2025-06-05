@@ -1,4 +1,4 @@
-.sign-in-page {
+.registration-page {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -6,7 +6,8 @@
   justify-content: center;
   height: 100vh;
 }
-.sign-in-header {
+
+.registration-header {
   text-align: center;
   font-size: 36px;
 }

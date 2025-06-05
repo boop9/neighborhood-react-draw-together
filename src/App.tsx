@@ -16,7 +16,6 @@ const App = () => {
       <div className="page-container">
         <header className="app-header">
           <div className="app-header-component + header-left-section">
-            <Sidebar></Sidebar>
             <div>{CreateButton() || <Skeleton />}</div>
           </div>
           <div className="app-header-component">drawing tools</div>
@@ -29,6 +28,7 @@ const App = () => {
             </Link>
           </div>
         </header>
+        <Sidebar></Sidebar>
         <section className="main-section">
           <section className="sort-order-section" id="sort-order-section">
             <SortDropdown onSelectSort={handleSortGroup} />
