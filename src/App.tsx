@@ -3,30 +3,41 @@
 // calls the "ListGroup" function in ListGroup.tsx
 
 import CreateButton from "./components/CreateButton";
-import SortButtons from "./components/SortButtons";
 import Skeleton from "react-loading-skeleton";
 import Sidebar from "./components/Sidebar";
 import Gallery from "./components/Gallery";
+import SortDropdown from "./components/SortDropdown";
+import { Link } from "react-router-dom";
 
 const App = () => {
   const handleSortGroup = (_sort: number, _group: number) => {};
   return (
     <>
-      <header className="app-header">
-        <div className="app-header-component + header-left-section">
-          <Sidebar></Sidebar>
-          <div>{CreateButton() || <Skeleton />}</div>
-        </div>
-        <div className="app-header-component">drawing tools</div>
-        <div className="app-header-component">user account</div>
-      </header>
-
-      <section className="sort-order-section" id="sort-order-section">
-        <SortButtons onSelectSort={handleSortGroup} />
-      </section>
-      <section className="image-gallery" id="image-gallery">
-        <Gallery>Images</Gallery>
-      </section>
+      <div className="page-container">
+        <header className="app-header">
+          <div className="app-header-component + header-left-section">
+            <Sidebar></Sidebar>
+            <div>{CreateButton() || <Skeleton />}</div>
+          </div>
+          <div className="app-header-component">drawing tools</div>
+          <div className="app-header-component registration-button-container">
+            <Link to="/sign-in" className="registration-button login-button">
+              LOG IN
+            </Link>
+            <Link to="/sign-up" className="registration-button signup-button">
+              SIGN UP
+            </Link>
+          </div>
+        </header>
+        <section className="main-section">
+          <section className="sort-order-section" id="sort-order-section">
+            <SortDropdown onSelectSort={handleSortGroup} />
+          </section>
+          <section className="image-gallery" id="image-gallery">
+            <Gallery>Images</Gallery>
+          </section>
+        </section>
+      </div>
     </>
   );
 };

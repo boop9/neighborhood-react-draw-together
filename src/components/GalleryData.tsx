@@ -1,13 +1,24 @@
 import { FileImage } from "lucide-react";
 
-export const GalleryData = [
+type GalleryDataItem = {
+  title: string;
+  path?: string;
+  thumbnail: React.ReactNode;
+  cName: string;
+  favourite: boolean;
+  lastUsed?: string;
+  id?: string;
+};
+
+export const GalleryData: GalleryDataItem[] = [
   {
     title: "Default Project",
-    Path: "/",
+    path: "/",
     thumbnail: <FileImage />,
     cName: "gallery-item",
     favourite: false,
-    LastUsed: "1 Month Ago",
+    lastUsed: "1 Month Ago",
+    id: "1122",
   },
   {
     title: "Draw Together Project",
@@ -15,5 +26,7 @@ export const GalleryData = [
     thumbnail: <FileImage />,
     cName: "gallery-item",
     favourite: false,
+    lastUsed: "1 Month Ago",
+    id: "1133",
   },
 ];

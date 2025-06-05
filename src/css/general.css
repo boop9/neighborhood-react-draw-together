@@ -5,15 +5,28 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  height: 100vh;
+  background-color: var(--page-background-color);
+}
+
 :root {
+  --page-background-color: #29292b;
+  --page-text-color: white;
   --border-color: rgb(75, 75, 75);
   --context-menu-background-color: hsl(240, 20%, 8%);
   --nav-background-color: #191819;
-  --icon-color: hsl(35, 69%, 87%);
-}
-
-.root {
-  isolation: isolate;
+  --light-color: hsl(35, 69%, 87%);
+  --icon-color: hsl(35, 40%, 94%);
 }
 
 ul {
@@ -46,4 +59,8 @@ ul {
 
 .hidden {
   display: none;
+}
+
+.no-border {
+  border-style: none;
 }

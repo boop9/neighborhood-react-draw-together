@@ -5,13 +5,12 @@
   flex-wrap: wrap;
   gap: 45px;
   row-gap: 60px;
-  margin-left: 45px;
 }
 
 .gallery-heading {
   width: 100%;
-  margin-left: 45px;
   margin-bottom: 20px;
+  color: var(--page-text-color);
 }
 
 .gallery-item {

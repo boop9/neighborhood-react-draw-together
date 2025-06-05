@@ -14,8 +14,10 @@
   height: 56px;
 
   border-bottom-color: var(--border-color);
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
+
+  z-index: 100;
 
   padding: 0px 8px;
 }
@@ -82,4 +84,47 @@
   margin: 0;
   width: 30px;
   height: 30px;
+}
+
+.registration-button-container {
+  display: flex;
+  flex-wrap: none;
+}
+
+.registration-button {
+  border-style: solid;
+  border-color: #0c6dc2;
+  border-radius: 10px;
+  border-width: 2px;
+  padding: 6px 20px;
+  margin-right: 8px;
+  background-color: #1b75d0;
+
+  color: white;
+  font-family: Inter;
+  font-weight: 500;
+
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.registration-button:hover {
+  filter: brightness(110%);
+}
+
+.registration-button:active {
+  filter: brightness(120%);
+}
+
+.login-button {
+  background-color: #073053;
+}
+
+.login-button:hover {
+  background-color: #083a65;
+}
+
+.signup-button {
+  border-style: none;
+  padding: 8px 22px;
 }

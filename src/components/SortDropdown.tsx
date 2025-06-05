@@ -5,7 +5,7 @@ interface Props {
   onSelectSort: (currentSort: number, CurrentGroup: number) => void;
 }
 
-const SortButtons = ({ onSelectSort }: Props) => {
+const SortDropdown = ({ onSelectSort }: Props) => {
   const sortitems = ["Last Modified", "Date Created", "Alphabetical"];
   const groupitems = ["Ascending", "Descending"];
   const [toggle, setToggle] = useState(false);
@@ -13,19 +13,27 @@ const SortButtons = ({ onSelectSort }: Props) => {
   const [currentSortName, setCurrentSortName] = useState("Last Modified");
   const [currentGroup, setCurrentGroup] = useState(0);
 
-  let rotate = 0;
   const dropdownToggle = () => {
     setToggle(!toggle);
     console.log(toggle);
 
-    rotate = rotate + 180;
+    let rotate = toggle === false ? "rotate(180deg)" : "rotate(0deg)";
+    let brightness: string = toggle ? "100%" : "120%";
     const icon = document.getElementById("chevron")!;
-    icon.style.transform = "rotate(" + { rotate } + "deg)";
+    const SortDropdownContainer = document.getElementById(
+      "sortdropdowncontainer"
+    )!;
+    icon.style.transform = rotate;
+    SortDropdownContainer.style.filter = "brightness(" + brightness + ")";
   };
 
   return (
     <div className="dropdown-container">
-      <button className="sort-dropdown-toggle" onClick={() => dropdownToggle()}>
+      <button
+        className="sort-dropdown-toggle"
+        id="sortdropdowncontainer"
+        onClick={() => dropdownToggle()}
+      >
         {currentSortName}
         <ChevronDown className="dropdown-chevron" id="chevron" />
       </button>
@@ -33,6 +41,8 @@ const SortButtons = ({ onSelectSort }: Props) => {
         className={toggle === true ? "dropdown-elements" : "hidden"}
         id="dropdownElements"
       >
+        <p className="dropdown-inner-heading">Sort</p>
+
         {sortitems.map((item, index) => (
           <button
             key={item}
@@ -51,7 +61,7 @@ const SortButtons = ({ onSelectSort }: Props) => {
           </button>
         ))}
 
-        <p className="order-heading">Order</p>
+        <p className="dropdown-inner-heading top-border">Order</p>
 
         {groupitems.map((groupitem, index) => (
           <button
@@ -76,4 +86,4 @@ const SortButtons = ({ onSelectSort }: Props) => {
   );
 };
 
-export default SortButtons;
+export default SortDropdown;
