@@ -7,7 +7,75 @@
   height: 100vh;
 }
 
+.registration-contents {
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  border-radius: 20px;
+
+  padding: 30px 30px 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scale: 140%;
+}
+
 .registration-header {
   text-align: center;
   font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.sign-up-form-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.sign-up-inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 16px;
+}
+
+.form-input {
+  color: black;
+  padding: 4px 2px;
+
+  border-style: solid;
+  border-radius: 6px;
+}
+
+.sign-up-input-container {
+  display: inline;
+}
+
+.forgot-password-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.sign-up-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up-button {
+  padding: 4px 15px;
+  background-color: transparent;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  border-radius: 18px;
+}
+
+.sign-up-button:hover {
+  border-color: rgb(86, 86, 86);
 }

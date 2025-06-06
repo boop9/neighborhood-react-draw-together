@@ -1,6 +1,6 @@
 .filterable-content-gallery-container {
   display: flex;
-  justify-content: baseline;
+  justify-content: left;
   align-items: baseline;
   flex-wrap: wrap;
   gap: 45px;
@@ -20,10 +20,7 @@
   width: 313px;
   height: 251px;
   background-color: gray;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px 15px 15px 15px;
 }
 
 .thumbnail {
