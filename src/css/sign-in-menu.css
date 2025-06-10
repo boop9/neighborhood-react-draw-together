@@ -38,13 +38,13 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .form-input {
   color: black;
-  padding: 4px 2px;
-
+  padding: 5px 2px;
+  margin: -5px;
   border-style: solid;
   border-radius: 6px;
 }
@@ -78,4 +78,11 @@
 
 .sign-up-button:hover {
   border-color: rgb(86, 86, 86);
+}
+
+.error-message {
+  color: crimson;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
 }

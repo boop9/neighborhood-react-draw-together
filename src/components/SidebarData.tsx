@@ -5,6 +5,5 @@ export const SidebarData = [
     title: "Draw Together",
     path: "/",
     icon: <PencilLine />,
-    cName: "icon nav-button",
   },
 ];
